@@ -17,7 +17,7 @@ namespace _72HourProject.Data
             return userIdentity;
         }
     }
-
+    
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
