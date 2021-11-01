@@ -39,6 +39,7 @@ namespace _72HourProject.Controllers
         }
         //Get By ID
         //api/Comment/{id}
+        [HttpGet]
         public async Task<IHttpActionResult> GetById([FromBody] int id)
         {
             Comment comment = await _context.Comments.FindAsync(id);
@@ -76,6 +77,7 @@ namespace _72HourProject.Controllers
         }
         //Delete (delete)
         //api/Comment/{id}
+        [HttpDelete]
         public async Task<IHttpActionResult> DeleteComment([FromBody] int id)
         {
             Comment comment = await _context.Comments.FindAsync(id);
