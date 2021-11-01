@@ -40,7 +40,7 @@ namespace _72HourProject.Controllers
         //Get By ID
         //api/Comment/{id}
         [HttpGet]
-        public async Task<IHttpActionResult> GetById([FromBody] int id)
+        public async Task<IHttpActionResult> GetById([FromUri] int id)
         {
             Comment comment = await _context.Comments.FindAsync(id);
             if(comment != null)
