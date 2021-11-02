@@ -12,7 +12,7 @@ namespace _72HourProject.Controllers
 {
     public class CommentController : ApiController
     { 
-        private readonly CommentDbContext _context = new CommentDbContext();
+        private readonly PostDbContext _context = new PostDbContext();
         // POST (create)
         //api/Comment
         [HttpPost]

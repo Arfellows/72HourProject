@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -16,9 +17,12 @@ namespace _72HourProject.Models
 
         [Required]
         public Guid AuthorId { get; set; }
-        public string Comments { get; set; }
 
-        //public virtual List<Comment> {get; set;}
+        [Required]
+        public string Text { get; set; }
 
+        [ForeignKey(nameof(Comments))]
+        public int CommentId { get; set; }
+        public virtual List<Comment> Comments{ get; set; } = new List<Comment>();
     }
 }
