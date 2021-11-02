@@ -209,6 +209,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -216,12 +217,17 @@
     <Compile Include="Migrations\202110311815175_InitialMigration.cs" />
     <Compile Include="Migrations\202110311815175_InitialMigration.designer.cs">
       <DependentUpon>202110311815175_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202111012201008_InitialMigration.cs" />
+    <Compile Include="Migrations\202111012201008_InitialMigration.Designer.cs">
+      <DependentUpon>202111012201008_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\CommentDbContext.cs" />
+    <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\PostDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -316,10 +322,6 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\72HourProject.Data\72HourProject.Data.csproj">
-      <Project>{b5b03051-1197-4b6b-8731-a4ccb35aff23}</Project>
-      <Name>72HourProject.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\72HourProject.Models\72HourProject.Models.csproj">
       <Project>{9c4b6fda-8706-4219-8d9d-228813419250}</Project>
       <Name>72HourProject.Models</Name>
@@ -328,6 +330,15 @@
       <Project>{e8305a6d-e2c9-4862-86af-665c9ca97242}</Project>
       <Name>72HourProject.Services</Name>
     </ProjectReference>
+    <ProjectReference Include="..\72HourProjject.Data\72HourProject.Data.csproj">
+      <Project>{8ae22a91-7b99-41ae-967e-4094ade3c623}</Project>
+      <Name>72HourProject.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202111012201008_InitialMigration.resx">
+      <DependentUpon>202111012201008_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202110311815175_InitialMigration.resx">
