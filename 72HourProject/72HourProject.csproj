@@ -217,6 +217,7 @@
     <Compile Include="Migrations\202110311815175_InitialMigration.cs" />
     <Compile Include="Migrations\202110311815175_InitialMigration.designer.cs">
       <DependentUpon>202110311815175_InitialMigration.cs</DependentUpon>
+		    </Compile>
     <Compile Include="Migrations\202111012201008_InitialMigration.cs" />
     <Compile Include="Migrations\202111012201008_InitialMigration.Designer.cs">
       <DependentUpon>202111012201008_InitialMigration.cs</DependentUpon>
