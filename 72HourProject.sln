@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "72HourProject.Models", "72H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "72HourProject.Services", "72HourProject.Services\72HourProject.Services.csproj", "{E8305A6D-E2C9-4862-86AF-665C9CA97242}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "72HourProject.Data", "72HourProjject.Data\72HourProject.Data.csproj", "{8AE22A91-7B99-41AE-967E-4094ADE3C623}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "72HourProject.Data", "72HourProject.Data\72HourProject.Data.csproj", "{8AE22A91-7B99-41AE-967E-4094ADE3C623}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
