@@ -214,10 +214,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202110311815175_InitialMigration.cs" />
-    <Compile Include="Migrations\202110311815175_InitialMigration.designer.cs">
-      <DependentUpon>202110311815175_InitialMigration.cs</DependentUpon>
-		    </Compile>
+    <Compile Include="Migrations\202110311815175_InitialMigration2.cs" />
+    <Compile Include="Migrations\202110311815175_InitialMigration2.designer.cs">
+      <DependentUpon>202110311815175_InitialMigration2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202111012201008_InitialMigration.cs" />
     <Compile Include="Migrations\202111012201008_InitialMigration.Designer.cs">
       <DependentUpon>202111012201008_InitialMigration.cs</DependentUpon>
@@ -342,8 +342,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202110311815175_InitialMigration.resx">
-      <DependentUpon>202110311815175_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202110311815175_InitialMigration2.resx">
+      <DependentUpon>202110311815175_InitialMigration2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
